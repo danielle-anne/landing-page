@@ -1,12 +1,50 @@
 *{
-    
+    box-sizing: border-box;
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: rgba(253, 253, 253, 0.575);
     margin: 25px;
     text-align: center;
+    margin-top: 120px;
 }
+
+.header{
+    position: fixed; /* makes the navigation bar sticky*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    /* background: #020e16; */
+    background-color: rgb(245, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 17px;
+    color: rgb(0,0,0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+
 .set{
     display: flex;
     flex-direction: row;
